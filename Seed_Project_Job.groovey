@@ -1,9 +1,7 @@
 job('Seed_Project') {
-    logRotator(-1, 10)
-    jdk('Java 6')
     scm {
         git('https://github.com/AniketKhedekar/Multi_Branch_Workflow.git', 'master')
-    }
+    }    
     triggers {
         githubPush()
     }
